@@ -1,0 +1,48 @@
+.call-to-action .btn {
+    background-color: #ffcc00;
+    color: #332D2D;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.call-to-action p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.call-to-action .btn:hover {
+    background-color: #332D2D;
+    color: #ffcc00;
+}
+
+@media (max-width: 576px) {
+    .post-excerpt {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.4rem 1.2rem;
+        font-size: 12px;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+    .call-to-action p {
+        font-size: 0.9rem;
+    }
+
+    .call-to-action .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 12px;
+    }
+}

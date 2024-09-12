@@ -1,0 +1,29 @@
+body{
+    background-color:   #F0ECEC;
+    font-family: 'roboto', sans-serif;
+}
+.call-to-action {
+    background-color: #332D2D;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#scroll-to-top.show {
+    display: block;
+    z-index: 9999;
+   
+}
+#scroll-to-top i {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+}

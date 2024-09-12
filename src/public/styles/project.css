@@ -1,0 +1,133 @@
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(51, 45, 45, 0.8), rgba(51, 45, 45, 0.8)), url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 3rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-content {
+    padding: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tech-stack li {
+    display: inline-block;
+    background-color: #332D2D;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+}
+
+.project-links {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.project-links .btn {
+    background-color: #ffcc00;
+    color: #332D2D;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-links .btn:hover {
+    background-color: #332D2D;
+    color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .tech-stack li {
+        font-size: 0.8rem;
+    }
+
+    .project-links .btn {
+        padding: 0.4rem 1.2rem;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,40 @@
+#footer{
+    position: relative;
+}
+
+#footer a:hover{
+    background-color: #332D2D;
+    color: white !important;
+}
+/* Footer */
+/* .footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Footer */
+/* @media (max-width: 768px) {
+    .footer-links {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+} */ 

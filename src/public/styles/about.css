@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
+.featurette-heading {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.lead {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.container {
+    margin-top: 3rem;
+}
+
+
+.featurette-img {
+    width: 30rem;
+    height: 30rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featurette-img :hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featurette {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .featurette-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.featurette-heading {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

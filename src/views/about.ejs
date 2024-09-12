@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <title>about | mCoder</title>
+    
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <%- include('./partials/navbar.ejs') %>
+    <!-- logIn Modal -->
+    <%- include('./partials/logInModal.ejs') %>
+    <!-- signUp Modal -->
+    <%- include('./partials/signUpModal.ejs') %>
+
+    
+    <div class="container my-5">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 ">
+                <h2 class="featurette-heading">It all started with mCoder's idea <span class="text-muted">It’ll blow
+                        your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid featurette-img" src="images/thumb1.jpg" alt="MSB">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">We started mCoder in 1970 <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid featurette-img" src="images/thumb2.jpg" alt="MSB">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid featurette-img" src="images/thumb3.jpg" alt="MSB">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonials -->
+    <%- include('./partials/testimonial.ejs')%>
+
+
+    <!-- Scroll to top -->
+    <%- include('./partials/scrollUp.ejs')%>
+
+
+    <!-- Footer -->
+    <%- include('./partials/footer.ejs')%>
+
+    <!-- Call to Action -->
+    <%- include('./partials/callToAction.ejs') %>
+   
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../../app.js"></script>
+    <script src="/scripts/about.js"></script>
+    <script src="/scripts/main.js"></script>
+    
+</body>
+
+</html>

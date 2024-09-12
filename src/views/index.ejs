@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/index.css">
+
+
+  <title>Home | mCoder</title>
+  <style>
+    html {
+   font-size: 62.5%;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <%- include('./partials/navbar.ejs') %>
+
+  <!-- logIn Modal -->
+  <%- include('./partials/logInModal.ejs') %>
+  <!-- signUp Modal -->
+  <%- include('./partials/signUpModal.ejs') %>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel Slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Wellcome to mCoder</h1>
+          <p>News, Development and Trends related Technology</p>
+          <button class="btn btn-success" aria-label="Technology button">Technology</button>
+          <button class="btn btn-danger" aria-label="Web Development button">Web Development</button>
+          <button class="btn btn-success" aria-label="Web Fun button">Web Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>The Best Coding Blog</h1>
+          <p>News, Development and Trends related Technology</p>
+          <button class="btn btn-success " aria-label="Technology button">Technology</button>
+          <button class="btn btn-danger" aria-label="Web Development button">Web Development</button>
+          <button class="btn btn-success" aria-label="Web Fun button">Web Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Award Winning Blog</h1>
+          <p>News, Development and Trends related Technology</p>
+          <button class="btn btn-success" aria-label="Technology button">Technology</button>
+          <button class="btn btn-danger" aria-label="Web Development button">Web Development</button>
+          <button class="btn btn-success" aria-label="Web Fun button">Web Fun</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- blogs -->
+  <div class="container my-5">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" >
+          <div class="col p-4 d-flex flex-column position-static" style="background-color: aliceblue;">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Global Coding Conferences</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad delectus
+              odit ipsa quae ut, voluptatibus natus magnam molestiae quas hic culpa sit, alias totam iusto eos nesciunt
+              atque! Inventore laborum voluptas, enim facilis autem dolores, cupiditate ut magni esse repudiandae
+              commodi eos, deserunt debitis quia pariatur temporibus sequi animi at nulla ad est? Labore, nulla velit.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/thumb1.jpg" alt="MSB" width="200" height="250">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" style="background-color: aliceblue;">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Learn Designing</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia sapiente
+              doloremque aperiam reiciendis fugit cum inventore placeat, quae ex dolore saepe! Asperiores adipisci
+              assumenda, ipsum consequuntur quibusdam, ullam accusamus laboriosam eveniet, labore nesciunt at odio
+              perferendis. Quibusdam maiores iusto magnam accusamus impedit in placeat consectetur sequi reiciendis est.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/thumb2.jpg" alt="MSB" width="200" height="250">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" style="background-color: aliceblue;">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Global Coding Conferences</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint delectus neque
+              nihil odit illum dolorum in praesentium ratione exercitationem deserunt quos cumque, asperiores aut
+              suscipit quam veritatis, velit fugit fuga, error expedita. Pariatur animi consectetur illum vel, sed eum!
+              Animi quod doloremque totam excepturi, autem quibusdam nesciunt sed voluptate, sequi mollitia eum officia.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/thumb3.jpg" alt="MSB" width="200" height="250">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" style="background-color: aliceblue;">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Learn Designing</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sint rem nisi
+              ducimus laborum obcaecati sed. Totam eos expedita ullam nobis, nesciunt cupiditate recusandae dolorum
+              mollitia error officia! Neque expedita vero maiores commodi adipisci! Quam consectetur sit necessitatibus
+              quidem ea quas tenetur exercitationem? Magni rem consequuntur atque corporis unde dolores, minus.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/thumb4.jpg" alt="MSB" width="200" height="250">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- testimonial -->
+  <!-- <%- include('./partials/testimonial.ejs')%> -->
+
+  <!-- Scroll to top -->
+  <%- include('./partials/scrollUp.ejs')%>
+
+  <!-- footer -->
+  <%- include('./partials/footer.ejs') %>
+  </div>
+
+  <!-- Call to Action -->
+  <%- include('./partials/callToAction.ejs') %>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../../app.js"></script>
+  <script src="/scripts/main.js"></script>
+  
+</body>
+
+</html>
