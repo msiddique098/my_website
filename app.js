@@ -68,7 +68,10 @@ app.get('/faqs', (req, res) => {
 
 
 mongoose.connect('mongodb+srv://msiddique098:Asdf0340@cluster0.on4j9.mongodb.net/')
-
-app.listen(port, () => {
+.then(() => {
+  console.log('MongoDB connected')
+  app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
+  }).catch(err => console.log(err))
+
 })
