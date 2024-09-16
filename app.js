@@ -1,4 +1,5 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const ejs = require('ejs')
 const path =require('path')
 const app = express()
@@ -65,6 +66,8 @@ app.get('/faqs', (req, res) => {
   }
 })
 
+
+mongoose.connect('mongodb+srv://msiddique098:Asdf0340@cluster0.on4j9.mongodb.net/')
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
