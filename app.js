@@ -10,7 +10,9 @@ const port = 3000
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "src", "public")))
 app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, "src", "views"))
+app.use('/', userRoute)
 
 
 // Root route
@@ -67,9 +69,6 @@ app.get('/faqs', (req, res) => {
     res.status(error.status || 500).send("Error! File Not found")
   }
 })
-
-// Sign Up Route
-app.use('/auth', userRoute);
 
 
 mongoose.connect('mongodb+srv://msiddique098:Asdf0340@cluster0.on4j9.mongodb.net/mCoder' ).then(() => {

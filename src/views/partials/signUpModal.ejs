@@ -1,3 +1,5 @@
+<body>
+<form id="signupForm" action="/signup" method="POST">
 <div class="modal fade" id="signUp-Modal" tabindex="-1" aria-labelledby="signUp-ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -9,31 +11,31 @@
           <div class="mb-3 row">
             <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="firstName">
+              <input type="text" class="form-control" id="firstName" name="firstname">
             </div>
           </div>
           <div class="mb-3 row">
             <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="lastName">
+              <input type="text" class="form-control" id="lastName" name="lastname">
             </div>
           </div>
           <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="staticEmail">
+              <input type="email" class="form-control" id="staticEmail" name="email">
             </div>
           </div>
           <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword">
+              <input type="password" class="form-control" id="password" name="inputPassword">
             </div>
           </div>
           <div class="mb-3 row">
             <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="confirmPassword">
+              <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
             </div>
           </div>
           <div class="checkbox mb-3">
@@ -45,8 +47,11 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create</button>
+        <button type="button" class="btn btn-primary" id="submitSignUp">Create</button>
       </div>
     </div>
   </div>
   </div>
+</form>
+  <script src="./scripts/signUp.js"></script>
+</body>

@@ -20,8 +20,10 @@ router.post(
   ],
   async (req, res) => {
     // Check for validation errors
+    console.log(req.body);
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
+      console.log("Incoming request body: ", req.body);
       return res.status(400).json({ errors: errors.array() });
     }
 
