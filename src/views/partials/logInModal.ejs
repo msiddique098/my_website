@@ -1,3 +1,5 @@
+<body>
+<form action="/logIn">
 <div class="modal fade" id="logIn-Modal" tabindex="-1" aria-labelledby="logIn-ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -10,13 +12,13 @@
           <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="staticLoginEmail">
+              <input type="email" class="form-control" name="logInEmail" id="staticLoginEmail">
             </div>
           </div>
           <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputLoginPassword" required minlength="8">
+              <input type="password" class="form-control" name="logInPassword" id="loginPassword" required minlength="8">
             </div>
           </div>
           <div class="checkbox mb-3 my-3">
@@ -33,3 +35,6 @@
       </div>
     </div>
   </div>
+</form>
+
+</body>
