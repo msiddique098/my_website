@@ -7,7 +7,7 @@ document.getElementById('submitSignUp').addEventListener('click', async function
       firstname: document.getElementById('firstName').value,
       lastname: document.getElementById('lastName').value,
       email: document.getElementById('staticEmail').value,
-      password: document.getElementById('inputPassword').value,
+      password: document.getElementById('password').value,
       confirmPassword: document.getElementById('confirmPassword').value
     };
   
