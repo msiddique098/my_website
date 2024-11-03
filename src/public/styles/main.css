@@ -27,3 +27,30 @@ body{
     padding: 10px;
     border-radius: 50%;
 }
+
+/* Modal buttons Styling */
+
+.modal-footer-container {
+    position: relative;
+    height: 0;
+  }
+  
+  .modal-footer {
+    position: absolute;
+    bottom: -60px; /* Moves the buttons 30px below the modal's bottom edge */
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Ensure background is transparent */
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 10px;
+  }
+  
+  .modal-content {
+    padding-bottom: 10px; /* Increase the modal's bottom padding to avoid overlap */
+  }
+  
+  .modal-dialog {
+    margin-bottom: 60px; /* Increase the bottom margin of the modal to make space for the buttons */
+  }
+  
