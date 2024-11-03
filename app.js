@@ -71,7 +71,7 @@ app.get('/faqs', (req, res) => {
 })
 
 
-mongoose.connect('mongodb+srv://msiddique098:Asdf0340@cluster0.on4j9.mongodb.net/mCoder' ).then(() => {
+mongoose.connect('mongodb+srv://msiddique098:Asdf0340@cluster0.on4j9.mongodb.net/mCoder', ).then(() => {
   console.log('MongoDB connected')
   app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
@@ -80,3 +80,23 @@ mongoose.connect('mongodb+srv://msiddique098:Asdf0340@cluster0.on4j9.mongodb.net
 }).catch((err) => {console.log(err + "MongoDB connection failed")
 
 })
+
+
+
+// -----------------------------------
+// ERROR HANDLING MIDDLEWARE
+// -----------------------------------
+
+app.use((req, res, next) => {
+  const error = new Error('Not Found');
+  error.status = 404;
+  next(error);
+});
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  res.render('error', {
+    message: error.message,
+    error: process.env.NODE_ENV === 'development' ? error : {}
+  });
+});
